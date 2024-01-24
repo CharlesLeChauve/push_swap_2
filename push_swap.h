@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 14:49:35 by tgibert           #+#    #+#             */
-/*   Updated: 2024/01/23 07:00:04 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/01/24 17:22:03 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ int	get_median(t_pile *pile);
 int	get_nthile(t_pile *pile, int n);
 void	set_index(t_pile *pile);
 int	is_sorted(t_pile *pile);
+t_pile	*get_by_index(t_pile *pile, int index);
 
 void	rotate(t_pile **pile);
 void	reverse_rotate(t_pile **pile);

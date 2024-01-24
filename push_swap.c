@@ -6,24 +6,11 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 10:16:24 by tgibert           #+#    #+#             */
-/*   Updated: 2024/01/24 06:32:04 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/01/24 17:20:08 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-
-t_pile	*get_by_index(t_pile *pile, int index)
-{
-	t_pile	*node;
-
-	if (index = 0)
-		return (pile);
-	node = pile->next;
-	while (index--)
-		node = node->next;
-	return (node);
-}
 
 int	get_target(int nb, t_pile *pile)
 {
@@ -198,7 +185,7 @@ void	sort_long_new(t_ab *ab)
 	sorted = cheat_sort(ab->pile_a);
 	while (pile_size(ab->pile_a) > 3)
 		pb(ab);
-	sort_three(ab->pile_a);
+	sort_three(ab);
 	while (ab->pile_b)
 	{
 		set_lst_target(ab);
@@ -247,7 +234,7 @@ int	main(int ac, char *av[])
 	if (pile_size(ab.pile_a) <= 10)
 		resolve_small(&ab);
 	else
-		sort_long(&ab);
+		sort_long_new(&ab);
 	// print_piles(ab);
 	// sort_three(&ab);
 	// print_piles(ab);

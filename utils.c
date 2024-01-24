@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 10:40:18 by tgibert           #+#    #+#             */
-/*   Updated: 2024/01/11 07:57:47 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/01/24 17:18:53 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ t_pile	*get_by_index(t_pile *pile, int index)
 {
 	t_pile	*node;
 
-	if (index = 0)
+	if (index == 0)
 		return (pile);
 	node = pile->next;
 	while (index--)
