@@ -42,6 +42,8 @@ int	get_target(int nb, t_pile *pile)
 			lowst_grtr_vlue = nb;
 		act = act->next;
 	}
+	if (lowst_grtr_vlue == INT_MAX)
+		return (get_index(pile, get_lower(pile)));
 	return (get_index(pile, lowst_grtr_vlue));
 }
 
@@ -58,20 +60,22 @@ void	set_lst_target(t_ab *ab)
 	}
 }
 
-int	get_cost(t_pile *node_b, t_pile *pile_a)
+void	set_cost(t_pile *node_b, t_pile *pile_a)
 {
 	int	cost_indx;
 	int	trgt_cost;
+	int	len_a;
+	int	len_b;
 
-	if (node_b->index > pile_size(node_b) / 2)
-		cost_indx = pile_size(node_b) - node_b->index;
+	len_b = pile_size(node_b);
+	len_a = pile_size(pile_a);
+	node_b->cost = node_b->index;
+	if (node_b->index > len_b / 2)
+		node_b->cost = len_b - node_b->index;
+	if (node_b->trgt_i > len_a / 2)
+		node_b->cost += len_a - node_b->trgt_i;
 	else
-		cost_indx = node_b->index;
-	if (node_b->trgt_i > pile_size(pile_a) / 2)
-		trgt_cost = pile_size(pile_a) - node_b->trgt_i;
-	else
-		trgt_cost = node_b->trgt_i;
-	return (trgt_cost + cost_indx);
+		node_b->cost += node_b->trgt_i;
 }
 
 void	set_lst_cost(t_ab *ab)
@@ -101,6 +105,7 @@ void	set_index(t_pile *pile)
 	{
 		act->index = index;
 		act = act->next;
+		index++;
 	}
 }
 
@@ -193,12 +198,9 @@ void	push_low_cost(t_ab *ab)
 
 void	sort_long_new(t_ab *ab)
 {
-	t_pile	*sorted;
-
-	sorted = cheat_sort(ab->pile_a);
 	while (pile_size(ab->pile_a) > 3)
 		pb(ab);
-	sort_three(ab->pile_a);
+	sort_three(ab);
 	while (ab->pile_b)
 	{
 		set_lst_target(ab);
@@ -247,7 +249,7 @@ int	main(int ac, char *av[])
 	if (pile_size(ab.pile_a) <= 10)
 		resolve_small(&ab);
 	else
-		sort_long(&ab);
+		sort_long_new(&ab);
 	// print_piles(ab);
 	// sort_three(&ab);
 	// print_piles(ab);
