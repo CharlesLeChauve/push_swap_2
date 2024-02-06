@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 13:09:49 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 09:42:11 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/06 17:46:48 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -212,8 +212,70 @@ void	get_on_top_b(t_ab *ab, t_pile *target)
 		rrbn(ab, target->cost);
 }
 
+int	get_dir(t_pile *pile, t_pile *node)
+{
+	int	size;
+
+	size = pile_size(pile);
+	if (node->index <= size / 2)
+		return (1);
+	else 
+		return (-1);
+}
+
+void	combine_rotates(t_ab *ab, t_pile *cheapest, t_pile *target)
+{
+	int	i;
+	int	max;
+	int	diff;
+	
+	if (cheapest->cost == 0 || target->cost == 0)
+		return;
+	diff = target->cost - cheapest->cost;
+	if (diff < 0)
+		diff = -diff;
+	if (target->cost > cheapest->cost)
+		max = target->cost;
+	else
+		max = cheapest->cost;
+	i = max - diff;
+	rrn(ab, i);
+	target->cost -= i;
+	cheapest->cost -= i;
+}
+
+void	combine_r_rotates(t_ab *ab, t_pile *cheapest, t_pile *target)
+{
+	int	i;
+	int	max;
+	int	diff;
+	
+	if (cheapest->cost == 0 || target->cost == 0)
+		return;
+	diff = target->cost - cheapest->cost;
+	if (diff < 0)
+		diff = -diff;
+	if (target->cost > cheapest->cost)
+		max = target->cost;
+	else
+		max = cheapest->cost;
+	i = max - diff;
+	rrrn(ab, i);
+	target->cost -= i;
+	cheapest->cost -= i;
+}
+
 void	get_targets_on_top(t_ab *ab, t_pile *cheapest, t_pile *target)
 {
+	int a_dir;
+	int	b_dir;
+
+	a_dir = get_dir(ab->pile_a, target);
+	b_dir = get_dir(ab->pile_b, cheapest);
+	if (a_dir == b_dir && a_dir == 1)
+		combine_rotates(ab, cheapest, target);
+	else if (a_dir == b_dir && a_dir == -1)
+		combine_r_rotates(ab, cheapest, target);
 	get_on_top_a(ab, target);
 	get_on_top_b(ab, cheapest);
 }

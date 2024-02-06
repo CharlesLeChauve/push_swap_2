@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 11:41:30 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/05 09:17:45 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/06 11:28:59 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ void	rrbn(t_ab *ab, int n);
 void	rran(t_ab *ab, int n);
 void	ran(t_ab *ab, int n);
 void	rbn(t_ab *ab, int n);
+void	rrn(t_ab *ab, int n);
+void	rrrn(t_ab *ab, int n);
 
 void	swap(t_pile **pile);
 void	rotate(t_pile **pile);
