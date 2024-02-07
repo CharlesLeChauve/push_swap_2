@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 13:09:49 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 17:46:48 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/07 07:21:58 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -302,8 +302,8 @@ void	sort_long(t_ab *ab)
 	while (ab->pile_b)
 	{
 		set_indexes(ab);
-		set_costs(ab);
 		set_targets(ab);
+		set_costs(ab);
 		//print_piles(*ab);
 		cheapest = get_cheapest(ab);
 		//printf("cheapest = %d, index = %d, cost = %d, target = %d, target cost = %d, total cost = %d\n",
