@@ -1,0 +1,300 @@
+action n: 0, action = pb
+action n: 1, action = pb
+action n: 2, action = pb
+action n: 3, action = pb
+action n: 4, action = pb
+action n: 5, action = pb
+action n: 6, action = pb
+action n: 7, action = pb
+action n: 8, action = pb
+action n: 9, action = pb
+action n: 10, action = pb
+action n: 11, action = pb
+action n: 12, action = pb
+action n: 13, action = pb
+action n: 14, action = pb
+action n: 15, action = pb
+action n: 16, action = pb
+action n: 17, action = pb
+action n: 18, action = pb
+action n: 19, action = pb
+action n: 20, action = pb
+action n: 21, action = pb
+action n: 22, action = pb
+action n: 23, action = pb
+action n: 24, action = pb
+action n: 25, action = pb
+action n: 26, action = pb
+action n: 27, action = pb
+action n: 28, action = pb
+action n: 29, action = pb
+action n: 30, action = pb
+action n: 31, action = pb
+action n: 32, action = pb
+action n: 33, action = pb
+action n: 34, action = pb
+action n: 35, action = pb
+action n: 36, action = pb
+action n: 37, action = pb
+action n: 38, action = pb
+action n: 39, action = pb
+action n: 40, action = pb
+action n: 41, action = pb
+action n: 42, action = pb
+action n: 43, action = pb
+action n: 44, action = pb
+action n: 45, action = pb
+action n: 46, action = pb
+action n: 47, action = sa
+action n: 48, action = ra
+action n: 49, action = rra
+action n: 50, action = pa
+action n: 51, action = ra
+action n: 52, action = pa
+action n: 53, action = ra
+action n: 54, action = pa
+action n: 55, action = ra
+action n: 56, action = ra
+action n: 57, action = pa
+action n: 58, action = ra
+action n: 59, action = ra
+action n: 60, action = ra
+action n: 61, action = pa
+action n: 62, action = ra
+action n: 63, action = pa
+action n: 64, action = ra
+action n: 65, action = pa
+action n: 66, action = ra
+action n: 67, action = ra
+action n: 68, action = pa
+action n: 69, action = rb
+action n: 70, action = pa
+action n: 71, action = rra
+action n: 72, action = rra
+action n: 73, action = pa
+action n: 74, action = rrr
+action n: 75, action = rrr
+action n: 76, action = rra
+action n: 77, action = pa
+action n: 78, action = pa
+action n: 79, action = rb
+action n: 80, action = pa
+action n: 81, action = rra
+action n: 82, action = rra
+action n: 83, action = rb
+action n: 84, action = pa
+action n: 85, action = rra
+action n: 86, action = rra
+action n: 87, action = rra
+action n: 88, action = pa
+action n: 89, action = rra
+action n: 90, action = pa
+action n: 91, action = ra
+action n: 92, action = rrb
+action n: 93, action = pa
+action n: 94, action = rrr
+action n: 95, action = rrr
+action n: 96, action = pa
+action n: 97, action = rra
+action n: 98, action = rra
+action n: 99, action = rb
+action n: 100, action = rb
+action n: 101, action = rb
+action n: 102, action = pa
+action n: 103, action = ra
+action n: 104, action = ra
+action n: 105, action = pa
+action n: 106, action = rra
+action n: 107, action = rra
+action n: 108, action = rra
+action n: 109, action = rb
+action n: 110, action = pa
+action n: 111, action = rra
+action n: 112, action = rra
+action n: 113, action = rb
+action n: 114, action = pa
+action n: 115, action = rra
+action n: 116, action = pa
+action n: 117, action = rb
+action n: 118, action = pa
+action n: 119, action = rr
+action n: 120, action = rr
+action n: 121, action = rb
+action n: 122, action = pa
+action n: 123, action = rb
+action n: 124, action = rb
+action n: 125, action = rb
+action n: 126, action = rb
+action n: 127, action = pa
+action n: 128, action = rra
+action n: 129, action = rra
+action n: 130, action = rra
+action n: 131, action = rra
+action n: 132, action = rra
+action n: 133, action = rb
+action n: 134, action = pa
+action n: 135, action = rrr
+action n: 136, action = rrr
+action n: 137, action = rra
+action n: 138, action = pa
+action n: 139, action = rrb
+action n: 140, action = rrb
+action n: 141, action = rrb
+action n: 142, action = pa
+action n: 143, action = ra
+action n: 144, action = rrb
+action n: 145, action = rrb
+action n: 146, action = pa
+action n: 147, action = rra
+action n: 148, action = rra
+action n: 149, action = rra
+action n: 150, action = rra
+action n: 151, action = rra
+action n: 152, action = rra
+action n: 153, action = rra
+action n: 154, action = pa
+action n: 155, action = rra
+action n: 156, action = rb
+action n: 157, action = rb
+action n: 158, action = pa
+action n: 159, action = rr
+action n: 160, action = rr
+action n: 161, action = rr
+action n: 162, action = pa
+action n: 163, action = ra
+action n: 164, action = ra
+action n: 165, action = ra
+action n: 166, action = pa
+action n: 167, action = rrr
+action n: 168, action = pa
+action n: 169, action = ra
+action n: 170, action = rrb
+action n: 171, action = rrb
+action n: 172, action = pa
+action n: 173, action = ra
+action n: 174, action = ra
+action n: 175, action = ra
+action n: 176, action = ra
+action n: 177, action = pa
+action n: 178, action = rr
+action n: 179, action = pa
+action n: 180, action = rr
+action n: 181, action = ra
+action n: 182, action = ra
+action n: 183, action = ra
+action n: 184, action = ra
+action n: 185, action = ra
+action n: 186, action = ra
+action n: 187, action = ra
+action n: 188, action = ra
+action n: 189, action = pa
+action n: 190, action = rr
+action n: 191, action = pa
+action n: 192, action = ra
+action n: 193, action = ra
+action n: 194, action = pa
+action n: 195, action = rra
+action n: 196, action = rb
+action n: 197, action = rb
+action n: 198, action = rb
+action n: 199, action = pa
+action n: 200, action = rr
+action n: 201, action = ra
+action n: 202, action = ra
+action n: 203, action = ra
+action n: 204, action = ra
+action n: 205, action = ra
+action n: 206, action = ra
+action n: 207, action = ra
+action n: 208, action = ra
+action n: 209, action = ra
+action n: 210, action = ra
+action n: 211, action = pa
+action n: 212, action = ra
+action n: 213, action = ra
+action n: 214, action = rrb
+action n: 215, action = pa
+action n: 216, action = ra
+action n: 217, action = ra
+action n: 218, action = ra
+action n: 219, action = ra
+action n: 220, action = ra
+action n: 221, action = ra
+action n: 222, action = ra
+action n: 223, action = pa
+action n: 224, action = pa
+action n: 225, action = rra
+action n: 226, action = pa
+action n: 227, action = rra
+action n: 228, action = rra
+action n: 229, action = rra
+action n: 230, action = rra
+action n: 231, action = rra
+action n: 232, action = rra
+action n: 233, action = rra
+action n: 234, action = rra
+action n: 235, action = rra
+action n: 236, action = rra
+action n: 237, action = rra
+action n: 238, action = rra
+action n: 239, action = rra
+action n: 240, action = rra
+action n: 241, action = rra
+action n: 242, action = rra
+action n: 243, action = rra
+action n: 244, action = rra
+action n: 245, action = rra
+action n: 246, action = rra
+action n: 247, action = rra
+Pile_a :	Pile_b :
+33		
+24				
+20				
+19				
+22				
+21				
+13				
+47				
+41				
+48				
+26				
+25				
+28				
+46				
+30				
+10				
+5				
+38				
+2				
+43				
+17				
+29				
+1				
+36				
+37				
+23				
+40				
+44				
+16				
+3				
+45				
+31				
+35				
+50				
+4				
+14				
+9				
+27				
+32				
+15				
+8				
+11				
+18				
+49				
+6				
+12				
+39				
+7				
+34				
+42				
+KO

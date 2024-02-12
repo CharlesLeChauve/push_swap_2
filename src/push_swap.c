@@ -6,7 +6,7 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 13:09:49 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/08 09:37:18 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/07 08:30:28 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -329,7 +329,6 @@ void	sort_long(t_ab *ab)
 		pa(ab);
 	}
 	get_min_on_top(ab);
-	print_piles(*ab);
 }
 
 int	main(int ac, char *av[])

@@ -6,11 +6,11 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 09:41:19 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 15:42:34 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/07 08:30:28 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	rran(t_ab *ab, int n)
 {

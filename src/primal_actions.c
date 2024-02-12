@@ -6,11 +6,11 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 10:43:49 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 08:11:04 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/07 08:30:28 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	swap(t_pile **pile)
 {

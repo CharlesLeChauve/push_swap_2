@@ -6,11 +6,11 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 10:40:18 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 09:34:43 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/07 08:30:28 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	set_index(t_pile *pile)
 {

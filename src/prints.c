@@ -6,11 +6,11 @@
 /*   By: tgibert <tgibert@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 09:40:04 by tgibert           #+#    #+#             */
-/*   Updated: 2024/02/06 07:50:48 by tgibert          ###   ########.fr       */
+/*   Updated: 2024/02/08 09:23:20 by tgibert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	print_pile_reverse(t_pile *pile)
 {
@@ -58,17 +58,18 @@ void	print_piles(t_ab ab)
 	else
 		ft_printf("\n");
 	act_a = act_a->next;
-	act_b = act_b->next;
+	if (act_b)
+		act_b = act_b->next;
 	while (act_a && act_a != ab.pile_a || act_b && act_b != ab.pile_b)
 	{
-		if (act_a && act_a != ab.pile_a )
+		if (act_a && act_a != ab.pile_a)
 		{
 			ft_printf("%d\t\t", act_a->nb);
 			act_a = act_a->next;
 		}
 		else
 			ft_printf("\t\t");
-		if (act_b && act_b != ab.pile_b )
+		if (act_b && act_b != ab.pile_b)
 		{
 			ft_printf("%d\t\n", act_b->nb);
 			act_b = act_b->next;

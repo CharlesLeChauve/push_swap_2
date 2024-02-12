@@ -1,30 +1,38 @@
-CC		=	cc
+CC			=	cc
 
-CFLAGS	=	-g #-Wall -Wextra -Werror
+CFLAGS		=	-g #-Wall -Wextra -Werror
 
-NAME	=	push_swap
+NAME		=	push_swap
 
-SRCS	=	push_swap.c primal_actions.c a_actions.c b_actions.c double_actions.c utils.c prints.c parsing.c action_repeater.c
+BONUS_SRCS	=	bonus_src/checker.c src/primal_actions.c bonus_src/sa_actions.c bonus_src/sb_actions.c bonus_src/sdouble_actions.c src/utils.c src/prints.c src/parsing.c
 
-OBJS	=	${SRCS:.c=.o}
+BONUS_OBJS	=	${BONUS_SRCS:.c=.o}
 
-all		:	${NAME}
+SRCS		=	src/push_swap.c src/primal_actions.c src/a_actions.c src/b_actions.c src/double_actions.c src/utils.c src/prints.c src/parsing.c src/action_repeater.c
 
-${NAME}	:	${OBJS}
-			${MAKE} -C libft bonus
-			${CC} ${CFLAGS} ${OBJS} -o ${NAME} -L./libft/ -lft
+OBJS		=	${SRCS:.c=.o}
 
-%.o		:	%.c
-			$(CC) $(CFLAGS) $(EXTRA_FLAGS) -c $< -o $@
+all			:	${NAME}
 
-clean	:
-			${MAKE} -C libft clean
-			rm -rf ${OBJS}
+${NAME}		:	${OBJS}
+				${MAKE} -C libft bonus
+				${CC} ${CFLAGS} ${OBJS} -o ${NAME} -L./libft/ -lft
 
-fclean	:	clean
-			${MAKE} -C libft fclean
-			rm -f ${NAME}
+bonus		:	${BONUS_OBJS}
+				${MAKE} -C libft bonus
+				${CC} ${CFLAGS} ${BONUS_OBJS} -o checker -L./libft/ -lft
 
-re		:	fclean all
+%.o			:	%.c
+				${CC} ${CFLAGS} ${EXTRA_FLAGS} -c $< -o $@
 
-.PHONY	:	all clean fclean re
+clean		:
+				${MAKE} -C libft clean
+				rm -rf ${OBJS}
+
+fclean		:	clean
+				${MAKE} -C libft fclean
+				rm -f ${NAME}
+
+re			:	fclean all
+
+.PHONY		:	all clean fclean re
